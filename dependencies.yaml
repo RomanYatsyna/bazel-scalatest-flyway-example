@@ -12,6 +12,11 @@ options:
   versionConflictPolicy: highest
 
 dependencies:
+  com.h2database:
+    h2:
+      lang: java
+      version: "2.1.210"
+
   org.flywaydb:
     flyway-core:
       lang: java

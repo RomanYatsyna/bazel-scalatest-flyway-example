@@ -11,9 +11,10 @@ filegroup(
 scala_test(
     name = "tests",
     srcs = glob(["**/*.scala"]),
-    deps = ["@third_party//3rdparty/jvm/org/flywaydb:flyway_core",
+    deps = ["@third_party//3rdparty/jvm/com/h2database:h2",
+            "@third_party//3rdparty/jvm/org/flywaydb:flyway_core",
             "@third_party//3rdparty/jvm/org/postgresql:postgresql",
-            "//example/src/main:main"
+            "//example/src/main:main",
             ],
     resources = ["//example/src/test:db_resources"],
 )

@@ -1,9 +1,9 @@
 package rv.yatsyna.db
 
 import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
-import rv.yatsyna.db.utils.DbScenario
+import rv.yatsyna.db.utils.{DataBases, DbScenario}
 
-class FlyWayExampleTest extends DbScenario {
+class PostgresExampleTest extends DbScenario(DataBases.POSTGRES) {
 
   test("Person with the ID 1 should be Forrest Gump") {
     val sql =
